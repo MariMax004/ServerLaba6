@@ -30,13 +30,22 @@ public class Server {
         logger.error("This is an error message");
         logger.fatal("This is a fatal message");
         */
-        if (args.length<1) {
-            System.out.println("Пожалуйста введите имя файла в коммандной строке");
-            logger.error("Имя файла не было введено");
+        if (args.length<2) {
+            System.out.println("Пожалуйста введите порт и имя файла в коммандной строке");
+            logger.error("Порт или имя файла не было введено");
             return;
         }
 
-        utils.input_file = args[0];
+        int port = 0;
+        try {
+            port = Integer.parseInt(args[0]);
+        } catch (Exception e){
+            return;
+        }
+
+        logger.info("Порт " + port);
+
+        utils.input_file = args[1];
         //инициализация коллекции
         RouteCollection collection = new RouteCollection();
 
@@ -82,7 +91,7 @@ public class Server {
         selector = Selector.open();
         serverSocket = ServerSocketChannel.open();
         serverSocket.configureBlocking(false);
-        serverSocket.bind(new InetSocketAddress(9999));
+        serverSocket.bind(new InetSocketAddress(port));
        logger.info("Сервер запущен");
 
 

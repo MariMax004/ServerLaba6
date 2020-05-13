@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Server_log:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Server_log_jar</output-path>
+    <root id="archive" name="Server_log.jar">
+      <element id="module-output" name="Server_log" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.13.0/log4j-api-2.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.13.0/log4j-core-2.13.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
