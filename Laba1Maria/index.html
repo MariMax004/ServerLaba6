@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Lab1</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+    <body>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="2" class="table">
+                        <div class="header-text">Максимова Мария P3210 вариант 2113</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cnvs">
+                    <td class="cnvs" colspan="2">
+                        <canvas id="canvas"></canvas>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table">
+                        <div id="label_x">X = 0</div>
+                    </td>
+                    <td class="table">
+                        <select class="selector" id="Select_x" onchange="set_x_value()">
+                            <option value="-5" >-5</option>
+                            <option value="-4">-4</option>
+                            <option value="-3">-3</option>
+                            <option value="-2">-2</option>
+                            <option value="-1">-1</option>
+                            <option selected value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table">
+                        <div id="label_y">Y = 0</div>
+                    </td>
+                    <td class="table">
+                       <input type="text" id="y_param" name="y">
+                        <div class="error" type="text" id="Error"></div>
+                </td>
+                </tr>
+
+                <tr>
+                    <td class="table">
+                        <div id="label_r">R = 3</div>
+                    </td>
+                    <td class="table">
+                        <select class="selector" id="Select_r" onchange="set_R_value()">
+                            <option value="1" id="r1">1</option>
+                            <option value="1.5" id="r1_5">1.5</option>
+                            <option value="2" id="r2">2</option>
+                            <option value="2.5" id="r2_5">2.5</option>
+                            <option selected value="3" id="r3">3</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table">
+                        <label>Кнопка ввода значений</label>
+                    </td>
+                    <td>
+                        <form action="treatment.php" method="GET">
+                            <button class="button" type="button" id="button" name="out_button">Ввод параметров</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table class="result-table">
+                            <thead>
+                                <td>X</td>
+                                <td>Y</td>
+                                <td>R</td>
+                                <td>RESULT</td>
+                                <td>Current time</td>
+                                <td>Computation time</td>
+                            </thead>
+                            <tbody id="table_out">
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="Code_js/draw.js"></script>
+        <script src="Code_js/Valid.js"></script>
+        <script src="Code_js/get_out.js"></script>
+        <script src="Code_js/addToTable.js"></script>
+    </body>
+</html>

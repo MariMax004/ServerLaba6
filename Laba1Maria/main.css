@@ -1,0 +1,46 @@
+#canvas {
+    height: 30vh;
+    padding: 1%;
+}
+.header-text{
+    font-family: "monospace";
+    font-size: 20px;
+}
+.cnvs{;
+    border: 2px solid #333;
+    text-align: center;
+}
+.error{
+    font-size: 16px;
+    color: red;
+    text-align: center;
+}
+.selector{
+    padding: 7px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #bfbfbf;
+}
+table {
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    background: #E1E3E0;
+    text-align: center;
+}
+.button{
+    background-color: #bfbfbf; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+td {
+    padding: 5px;
+    width: 10%;
+    border: 2px solid #333; /* Параметры рамки */
+    color: #696969;
+}
