@@ -1,0 +1,25 @@
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии */
+    background: white; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+}
+thead {
+    background: white; /* Цвет фона заголовка */
+}
+td, th{
+    text-align: center;
+    padding: 5px;
+    width: 10%;
+    border: 2px solid white; /* Параметры рамки */
+    background: white; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+}

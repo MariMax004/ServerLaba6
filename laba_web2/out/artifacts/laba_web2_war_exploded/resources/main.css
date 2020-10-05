@@ -1,0 +1,109 @@
+.head{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    background: #808080;
+    font-family: "monospace";
+    color: white;
+    font-size: 20px;
+}
+
+#head-title{
+    text-align: center;
+    font-size: 20px;
+}
+body{
+    background: #808080;
+    min-width: 700px;
+    overflow: paged-x;
+}
+.main{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    font-family: cursive;
+}
+.main h2{
+    color: #FFD700;
+}
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    background: #f5e8d0;
+}
+td{
+    text-align: center;
+    padding: 5px;
+    width: 10%;
+    border: 2px solid #333;
+}
+tbody tr:nth-child(even) {
+    background: #f0f0f0;
+}
+canvas {
+    float: right;
+    margin-right: 10px;
+}
+button.r-button{
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    background: #808080;
+    font-family: cursive;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.button{
+    background-color: #FFD700;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    outline: none;
+    display: block;
+    height: 45px;
+    width: 45px;
+}
+.submit-button{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    background: #808080;
+    font-family: cursive;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.submit-button:hover, .r-button:hover, .r-button.pressed{
+    background: #FFD700;
+    color: white;
+}
+.input_param{
+    position: relative;
+    display: block;
+    min-width: 220px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
